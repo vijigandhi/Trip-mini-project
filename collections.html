@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@400;500&family=Pacifico&family=Poppins:wght@200&family=Raleway:wght@300&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="CSS/planner.css">
+ 
+   
+    <title>Document</title>
+    <style>
+
+.topnav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px #999;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin-left: 40px;
+    width: 100px; 
+    height: auto; 
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .menu {
+    width: 70%;
+    /* flex: 1; */
+    display: flex;
+    
+    justify-content: flex-end; 
+  }
+  
+  .menu ul {
+    width: 80%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3%;
+    justify-content: flex-end; 
+  }
+  
+  .menu ul li {
+    margin-right: 10px;
+  }
+  
+  .menu ul li:last-child {
+    margin-right: 0; 
+  }
+  
+  .menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .user {
+    width: 160px; 
+    display: flex;
+    justify-content: center; 
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  a,i{
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  .user a {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  .user .signin:hover {
+    transition: box-shadow 0.2s ease;
+    box-shadow: 0px 1px 4px #999;
+}
+  
+  .user .profile i {
+    font-size: 24px;
+  }
+  .signin{
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F9896B;
+    border-radius: 50px;
+  }
+  
+    </style>
+</head>
+<body>
+    <header style="position: sticky; top: 0; left: 0; z-index: 1000; height: 40px; ">
+        <div class="topnav">
+            <div class="logo">
+                <a href="index.html"><img src="Assets/dckap-trip-logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="collections.html">Critiq Collections</a></li>
+                <li><a href="admin.html">Admin Dashboard</a></li>
+              </ul>
+            </div>
+            <div class="user">
+              <a href="login.html" id="nav-btn" class="signin"   >Sign In</a>
+              <a href="profile.html" id="nav-profile"  class="profile"><i class="fa-solid fa-user" style="color: #f9896b;"></i></i></a>
+            </div>
+          </div>
+    </header>
+    <div class="under-construction">
+        <img class="construction-png" src="Assets/construction-2.png" alt="">
+    </div>
+   
+   
+    <!-- -------------------------------- footer ------------------------------- -->
+  <footer>
+    <!-- <hr style="width:100%;text-align:left;margin-left:0"> -->
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="Assets/logo-full-palli-tamil-color.png" alt="Logo">
+        </div>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="#">Destinations</a>
+                <a href="#">Planner</a>
+                <a href="#">Critiq Collections</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#">Discord</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <a href="#">Privacy Policy</a>
+                <!-- <a href="#">Link 2</a>
+                <a href="#">Link 3</a> -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="JS/navbar.js"></script>
+ 
+</body>
+</html>

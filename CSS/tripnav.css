@@ -1,0 +1,97 @@
+
+.topnav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px #999;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin-left: 40px;
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Allows the logo div to adjust its height based on content */
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .menu {
+    width: 70%;
+    /* flex: 1; */
+    display: flex;
+    
+    justify-content: flex-end; /* Takes up remaining space */
+  }
+  
+  .menu ul {
+    width: 80%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3%;
+    justify-content: flex-end; 
+  }
+  
+  .menu ul li {
+    margin-right: 10px;
+  }
+  
+  .menu ul li:last-child {
+    margin-right: 0; /* Removes margin from last menu item */
+  }
+  
+  .menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .user {
+    width: 160px; /* Adjust width as needed */
+    display: flex;
+    justify-content: center; /* Aligns user links to the right */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  a,i{
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  .user a {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  .user a:hover {
+    transition: box-shadow 0.2s ease;
+    box-shadow: 0px 1px 4px #999;
+}
+  
+  .user .profile i {
+    font-size: 24px;
+  }
+  .signin{
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F9896B;
+    border-radius: 50px;
+  }
+  
+    

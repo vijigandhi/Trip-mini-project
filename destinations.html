@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@400;500&family=Pacifico&family=Poppins:wght@200&family=Raleway:wght@300&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="CSS/destinations.css" />
+
+  <link rel="stylesheet" href="CSS/review.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <style>
+
+.topnav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px #999;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin-left: 40px;
+    width: 100px; 
+    height: auto; 
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .menu {
+    width: 70%;
+    /* flex: 1; */
+    display: flex;
+    
+    justify-content: flex-end; 
+  }
+  
+  .menu ul {
+    width: 80%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3%;
+    justify-content: flex-end; 
+  }
+  
+  .menu ul li {
+    margin-right: 10px;
+  }
+  
+  .menu ul li:last-child {
+    margin-right: 0; 
+  }
+  
+  .menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .user {
+    width: 160px; 
+    display: flex;
+    justify-content: center; 
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  a,i{
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  .user a {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 50px;
+  }
+  .user .signin:hover {
+    transition: box-shadow 0.2s ease;
+    box-shadow: 0px 1px 4px #999;
+}
+  
+  .user .profile i {
+    font-size: 24px;
+  }
+  .signin{
+    padding: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #F9896B;
+    border-radius: 50px;
+  }
+  
+  </style>
+</head>
+
+<body>
+  <header style="position: sticky; top: 0; left: 0; z-index: 1000; height: 70px; ">
+    <div class="topnav">
+      <div class="logo">
+        <a href="index.html"><img src="Assets/dckap-trip-logo.png" alt="Logo"></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="collections.html">Critiq Collections</a></li>
+          <li><a href="admin.html">Admin Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="user">
+        <a href="login.html" id="nav-btn" class="signin"   >Sign In</a>
+        <a href="profile.html" id="nav-profile"  class="profile"><i class="fa-solid fa-user" style="color: #f9896b;"></i></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- <main> -->
+ 
+
+  <div class="top-div">
+    <h1 class="font-bold text-4xl mb-4 mt-10 destinations-heading">
+      Destinations
+    </h1>
+    <h1 class="text-3xl mb-6">
+      “A journey of a thousand miles begins with a single step.”
+    </h1>
+    <div class="input-container">
+      <input type="text" name="text" class="input" id="dest-search" placeholder="Search Destinations..." />
+      <svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24" class="icon">
+        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+        <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+        <g id="SVGRepo_iconCarrier">
+          <rect fill="white" height="24" width="24"></rect>
+          <path fill=""
+            d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM9 11.5C9 10.1193 10.1193 9 11.5 9C12.8807 9 14 10.1193 14 11.5C14 12.8807 12.8807 14 11.5 14C10.1193 14 9 12.8807 9 11.5ZM11.5 7C9.01472 7 7 9.01472 7 11.5C7 13.9853 9.01472 16 11.5 16C12.3805 16 13.202 15.7471 13.8957 15.31L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L15.31 13.8957C15.7471 13.202 16 12.3805 16 11.5C16 9.01472 13.9853 7 11.5 7Z"
+            clip-rule="evenodd" fill-rule="evenodd"></path>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ✅ Grid Section - Starts Here 👇 -->
+  <section id="Projects"
+    class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+  </section>
+  <!-- </main> -->
+
+
+  <!-- -------------------------------------review-code-gunasri-------------------------------- -->
+
+  <div class="review-div">
+    <h1 class="re-heading">Reviews</h1>
+
+  
+      <div class="review_main" id="main_id">
+
+      </div>
+
+
+    <div class="review_share">
+      <button class="review_share_btn">Share Your Review</button>
+    </div>
+    <br><br>
+
+
+    <div class="review_maincontainer2">
+    </div>
+    <div class="review_container2_parent">
+      <div class="review_container2">
+        <button id="review_cancel_btn"><i class="fa-solid fa-xmark"></i></button>
+        <h2 class="review_container2_heading1">Review Zone Share Your Thoughts!!</h2>
+        <h3 class="review_container2_heading2">How would you rate your experience ?</h3>
+        <div class="stars" id="star_id">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p id="star_rating_value"></p>
+        </div>
+        <p class="star_error_msg"></p>
+        <h3 class="review_container2_heading2">Write a Review</h3>
+        <textarea id="review_textarea" rows="3" cols="50" spellcheck="false"
+          placeholder="Write a review here..."></textarea>
+        <p class="textarea_error_msg"></p><br>
+        <button class="review_submit_btn">Submit review</button>
+      </div>
+    </div>
+
+
+    <div id="signupPopup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+
+        <p class="popup-text">You need to sign up or log in to submit a review.</p>
+      </div>
+    </div>
+
+  </div>
+<!-- -----------------------------footer------------------- -->
+<footer>
+  <div class="footer-container">
+      <div class="footer-logo">
+          <img src="Assets/logo-full-palli-tamil-color.png" alt="Logo">
+      </div>
+      <div class="footer-links">
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <a href="destinations.html">Destinations</a>
+          <a href="planner.html">Planner</a>
+          <a href="collections.html">Critiq Collections</a>
+      </div>
+      <div class="footer-section">
+          <h3>Follow Us</h3>
+          <a href="https://discord.gg/mMbcRrMz">Discord</a>
+          <a href="https://www.linkedin.com/company/dckap-palli/mycompany/">Linkedin</a>
+          <a href="https://www.instagram.com/dckappalli/">Instagram</a>
+      </div>
+          <div class="footer-section">
+              <h3>Legal</h3>
+              <a href="#">Privacy Policy</a>
+              
+          </div>
+      </div>
+  </div>
+</footer>
+
+  <script type="module" src="JS/destinations.js"></script>
+  <script src="JS/navbar.js"></script>
+ 
+</body>
+
+</html>

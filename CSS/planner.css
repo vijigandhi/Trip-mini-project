@@ -1,0 +1,41 @@
+
+html{
+    overflow-x: hidden;
+    
+  }
+  body {
+    margin: 0;
+    user-select: none;
+   
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background: #F9896B;
+    border-radius: 2.5px;
+  }
+.under-construction{
+    width: 100%;
+    height: auto;
+    background-image: url('Assets/construction-2.png');
+    background-size: contain;
+    /* height: fit-content; */
+    display: flex;
+    justify-content: center;
+   
+}
+.construction-png{
+ /* width: 1000px; */
+    height: 674px; 
+    width: 80%;
+    /* height:40%; */
+}

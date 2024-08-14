@@ -1,0 +1,133 @@
+
+html{
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  user-select: none;
+ 
+}
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #F9896B;
+  border-radius: 2.5px;
+}
+
+/* --------------- */
+
+
+main {
+    margin-bottom: 200px; /* Adjust this value based on your design */
+}
+.review-div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ margin-bottom: 100px;
+   /* border:1px solid #F9896B;
+  border-radius: 5px;  */
+}
+.review_main {
+  width: 70%;
+  display: flex;
+  /* border:1px solid #6b6b6b; */
+  border-radius: 5px;
+  align-items: center;
+ 
+  /* background-color: #F9896B; */
+  height: 340px; 
+  /* max-height: 340px; */
+  overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+}
+
+/* ------------------------ */
+.input-container {
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.top-div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+.input {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 18px 16px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.input::placeholder {
+  color: transparent;
+}
+
+.input:focus::placeholder {
+  color: rgb(131, 128, 128);
+}
+
+.input:focus,.input:not(:placeholder-shown) {
+  background-color: #fff;
+  border: 1px solid #F9896B;
+  width: 290px;
+  cursor: none;
+  padding: 18px 16px 18px 45px;
+}
+
+.icon {
+  position: absolute;
+  right: 0;
+  height: 45px;
+  width: 45px;
+  background-color: #fff;
+  border-radius: 99px;
+  z-index: -1;
+  fill: #F9896B;
+  border: 1px solid #F9896B;
+}
+
+.input:focus + .icon,.input:not(:placeholder-shown) + .icon {
+  z-index: 0;
+  background-color: transparent;
+  border: none;
+}
+/* ------footer----- */
+
+/* ---------------------- */
+.destination-name{
+  font-family: "Montserrat";
+}
+.destinations-heading{
+  font-family: "Montserrat";
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: 'Montserrat';
+}
+.package-name{
+  font-family: 'Montserrat';
+}
+.no-days{
+  font-family: 'Montserrat';
+}

@@ -1,0 +1,295 @@
+
+
+{
+  
+    "days":2,
+    "destination":"Ooty",
+   
+    "image":"Assets/17702.jpg",
+    "name":"Enchanted Ooty Expedition",
+
+    "places":[
+    {
+    "description":"Surrounded by palatial tea estates, dense shola forests, manicured gardens, and mist clad mountains, Doddabetta Peak is one of the most brilliant sightseeing spots of Ooty. Perched at a height of 2637m, it is a popular jumping off point to explore nature’s bounties. Witness the unmatched natural beauty encircling the peak through the telescopes at the Telescope House maintained by the Tamil Nadu Tourism Development Corporation.",
+    "name":"Doddabetta Peak"
+    },
+    {
+    "description":"Another stunning sightseeing spot among the places to visit in Ooty is the highly photographed Pykara Lake, flanked by gorgeous scenery which will enhance the charm of your visit. It’s hemmed in by beautiful rolling hills and surrounded by impressive scenery. Touring the lake by a boat run by the Tamil Nadu Tourism Development Corporation gives you the best views of surrounding landscape with hills rising up behind it. Don’t miss the boat cruise that enables you to enjoy the relaxing ambience enveloping the lake.",
+    "name":"Pykara Lake/Boat Club"
+    }
+    ],
+    "review":[
+        {
+        "review-para":"Surrounded by palatial tea estates, dense shola forests, manicured gardens, and mist clad mountains, Doddabetta Peak is one of the most brilliant sightseeing spots of Ooty. Perched at a height of 2637m, it is a popular jumping off point to explore nature’s bounties. Witness the unmatched natural beauty encircling the peak through the telescopes at the Telescope House maintained by the Tamil Nadu Tourism Development Corporation.",
+        "username":"Doddabetta Peak",
+        "ratings":4,
+        "avatar": "png"
+        },
+        {
+        "review-para":"Another stunning sightseeing spot among the places to visit in Ooty is the highly photographed Pykara Lake, flanked by gorgeous scenery which will enhance the charm of your visit. It’s hemmed in by beautiful rolling hills and surrounded by impressive scenery. Touring the lake by a boat run by the Tamil Nadu Tourism Development Corporation gives you the best views of surrounding landscape with hills rising up behind it. Don’t miss the boat cruise that enables you to enjoy the relaxing ambience enveloping the lake.",
+        "username":"Pykara Lake/Boat Club",
+        "ratings":4,
+        "avatar": "png"
+        }
+]
+
+},
+
+  
+
+// packages add up until now
+// OOty-5
+{
+    "id": "unique_package_id_12345",
+    "destination": "OOty",
+    "name": "Journey to the Heart of the Hills",
+    "days": 5,
+    "image": "Assets/17702.jpg",
+    "places": [
+      {
+        "name": "Avalanche Lake",
+        "description": "A picturesque lake formed by a landslide, this family-friendly spot near Ooty, despite its misleading name, is perfect for nature lovers. Located 28 km away, it offers trout fishing, trekking, and camping. The beautiful surroundings make it an ideal place to pitch tents and spend a serene night."
+      },
+      {
+        "name": "Ooty Lake",
+        "description": "Originally built for fishing, this artificial lake in Ooty has transformed into a top tourist spot, offering panoramic views. A must-visit in Ooty, the lake hosts the famous summer festival with boat races and entertaining games. The boathouse adds to the allure, with boating being a favorite activity for tourists."
+      },
+      {
+        "name": "Emerald Lake",
+        "description": "Nestled 17 km from Ooty, the serene Emerald Lake captivates with its pristine beauty, encircled by the enchanting Nilgiri range and unexplored trails. Ideal for a calming retreat, the lake offers mesmerizing sunset views, making it a must-visit. Nearby resorts provide convenient accommodations for a longer, soothing stay away from the city hustle."
+      },
+       
+      {
+        "name": "Botanical Garden",
+        "description": "Ooty's Botanical Garden is a must-visit, showcasing a diverse collection of over 600 plant species across 55 acres. Divided into three sections, adorned with lush lawns and ponds, it's a haven for nature enthusiasts and plant lovers. Renowned for sightseeing, nature walks, and exhibitions, exploring the garden typically takes around 3 hours."
+      },
+       
+      {
+        "name": "Deer Park",
+        "description": "This is one of the best places to visit in Ooty, if you are a wildlife enthusiast.  The park does full justice to its name as there are different varieties of deer found within its boundaries, such as Chital Deer and Sambhal Deer. However, the deer park is also home to a large number of wild animals, such as rabbits, hares, and birds."
+      }
+    ],
+    "iframeLink": "https://www.google.com/maps/embed?pb=..."
+},
+
+// ooty-7
+
+{
+    "id": "unique_package_id_12345",
+    "destination": "OOty",
+    "name": "Journey to the Heart of the Hills",
+    "days": 7,
+    "image": "Assets/17702.jpg",
+    "places": [
+      {
+        "name": "Ooty Boat House",
+        "description": "Situated at Ooty Lake, the Ooty Boathouse is a prime attraction, offering a serene escape or an adventurous day out. Capture picturesque moments by the renowned Ooty Lake, resembling paradise. In May, indulge in speed boating and boat pageants, enhancing the fun during your visit to this must-see destination."
+      },
+      {
+        "name": "Government Museum",
+        "description": "The Government Museum in Ooty is a cultural and archaeological treasure, providing insight into the hill station's history. A must-visit for enthusiasts, it houses a remarkable collection of tribal artifacts, offering a glimpse into Ooty's origins and the diverse heritage of its tribes. Located near Arts College in the Stone House Area, the museum showcases a unique array of art, craft, sculpture, and historical items."
+      },
+      {
+        "name": "Kalhatty Waterfalls",
+        "description":"Located 14 km from Ooty, Kalhasti Waterfall in Kalhatty village cascades from a height of 120-122 feet. Surrounded by diverse wildlife and hill birds, the area also boasts various spices, making it a famous spot for trekking and a memorable experience in Ooty. Explore the Kalhatty Hills for a blend of nature, adventure, and spice-scented memories."
+      },
+       
+      {
+        "name": "Dolphin’s Nose",
+        "description": "A haven for nature enthusiasts, this spot offers a breathtaking panoramic view, accentuated by Catherine Falls, Nilgiri Hills, and lush greenery. Ideal for adventure seekers and photographers, a telescope enhances the mesmerizing experience. Savor the rejuvenating Coonoor tea and visit from March to May for the best weather, ensuring this mystical place leaves you awestruck."
+      },
+       
+      {
+        "name": "Needle View Hillpoint",
+        "description": "Known as Oosi Malai, Needle View Hill Point is a serene escape for picnics and nature lovers in Ooty. Away from city life, it provides an ideal setting to calm your soul, offering panoramic views from rocky vantage points. The cool breeze and scenic sunset enhance the romantic allure, making it a perfect spot to fall in love with nature."
+      },      {
+        "name": "Stone House",
+        "description": "Stone House is an old building that belonged to the British-era. It tells the story of the lives and struggles of Nilgiri residents who lived during that time. You can find their weapons, coins, postal stamps, and utensils as artifacts inside the house. You can also acquire unique information about the social life and agricultural techniques that were used during that time. The place also serves as the heritage house of the bygone era and is one of the best Ooty places to see. It is a boon for archaeologists, historians, and lovers of art and culture. "
+      },
+       
+      {
+        "name": "Toda Huts",
+        "description": "The doors to these huts are so low that one has to stoop or bend down to enter these huts. BUt once you enter, there is enough space for you to stand. This tribe survives on cattle herding and farming at large. These Toda Hamlets, as they are also called, can be found at a distance of 5.6 kms from the mainland of Ooty and are proof that this community still exists.
+"
+      }
+    ],
+    "iframeLink": "https://www.google.com/maps/embed?pb=..."
+},
+
+
+// Kodaikanal
+
+
+{
+    "id": "unique_package_id_12345",
+    "destination": "Kodaikanal",
+    "name": "Journey to the Heart of the Hills",
+    "days": 5,
+    "image": "Assets/17702.jpg",
+    "places": [
+      {
+        "name": "Canopy Hill, Vattakanal",
+        "description": "A top destination in Kodaikanal, this place offers a spectacular nature show accompanied by bird melodies. The 15 KM trek through the Western Ghat forest lets you encounter wildlife like bison and porcupines. Upon reaching the quaint village of Vellagavi after 10 KM, friendly locals offer a variety of fresh fruits and spices, creating a unique trekking experience."
+      },
+      {
+        "name": "Green Valley View",
+        "description": "Green Valley View in Kodaikanal provides a unique vantage point for a bird's eye view of Vaigai Dam, surrounded by captivating greenery, cloud-kissed valleys, and lush mountains. Though considered a dangerous viewpoint due to the tricky ascent and significant height, the panoramic spectacle is enthralling. However, mist post late afternoon may obscure the view, creating a different, hazy ambiance."
+      },
+      {
+        "name": "Kodaikanal Lake",
+        "description": "The star-shaped, man-made Kodaikanal Lake is a mesmerizing centerpiece surrounded by the scenic Palani Hills ranges. Visitors can enjoy strolls, boat rides, and, with permission, fishing. Renowned for preserving the rare Kurinji Flower, the lake hosts captivating flower shows and Boat Pageants, particularly during the summer season."
+      },
+       
+      {
+        "name": "Bear Shola Falls",
+        "description": "For privacy, serenity, and a brush with exotic fauna, Bear Shola Falls is a must-visit in Kodaikanal. Named after bears quenching their thirst here, it comes to life during the monsoons, cascading down green mountains and stylishly shaped rocks. Ideal for Kodaikanal sightseeing, the area, dominated by monkeys, requires comfortable shoes due to its slippery terrain."
+      },
+       
+      {
+        "name": "Pillar Rocks",
+        "description": "The majestic Pillar Rocks, adjacent to the mysterious Guna Caves, unfold a love story, adding charm to Kodaikanal's must-visit places. Reaching up to 400 feet, these rocks offer a paramount contour of the hills. While the white wooden cross symbolizing love is lost with time, the site remains ideal for picnics, featuring a mini garden for added tourist amusement."
+      }
+    ]
+  
+},
+
+{
+    "id": "unique_package_id_12345",
+    "destination": "kodaikanal",
+    "name": "Journey to the Heart of the Hills",
+    "days": 7,
+    "image": "Assets/17702.jpg",
+    "places": [
+      {
+        "name": "Thalaiyar Falls",
+        "description": "Thalaiyar Falls, a captivating sight during Kodaikanal sightseeing, is a unique waterfall, cascading like a narrow tail at high speed from a height of 297m—the highest in Tamil Nadu. Appearing as a large strip amidst the Palani ranges, it offers a mesmerizing view. Popular for hiking, the trek at the base covers an impressive distance of 15km."
+      },
+      {
+        "name": "Berijam Lake",
+        "description": "Berijam Lake, a hidden gem within Kodaikanal's forests, offers breathtaking scenery sourced from its dam. Ideal for nature lovers, it's perfect for bird-watching, photography, and relaxation. Visits require planning, as access is restricted after 3:00 PM due to fog, and limited entry is allowed, making mornings the best time to explore this pristine lake."
+      },
+      {
+        "name": "Bryant Park",
+        "description":"Bryant Park, a cherished site in Kodaikanal, offers a blend of education, picnicking, and gardening. Abundant with diverse plant species, it captivates horticulture enthusiasts, serving as both an educational and entertaining destination. Notably, the park boasts rare Green Roses, and the Annual Horticulture Show in May attracts visitors worldwide."
+      },
+       
+      {
+        "name": "Silver Cascade Falls",
+        "description": "The Silver Cascade Waterfall, a scenic marvel on the way to Madurai, lives up to its name with a majestic 180ft drop. Sourced from the overflowing Kodai Lake, it cascades with resounding thuds, inviting some to take a refreshing dip. Surrounding vendors offer the aroma of homemade chocolates and herbal oils, enticing souvenir purchases. Enjoying local fruits and delicacies by the lakeside restaurants creates lasting memories."
+      },
+       
+      {
+        "name": "Silent Valley View Point",
+        "description": "Silent Valley View Point is nature’s beauty at its best with heart-throbbing views of the white cloud-painted mountains. The pea green valley that lies below makes this point amongst the supreme tourist places in Kodaikanal.
+You can catch the sunrise and sunset in the eyes of the city, and confirm that you are indeed in the ‘princesses of hills’. The winter season blankets the valley with a white mist that associate to form a panoramic visual that is incomparable to anything else you have ever seen."
+      },      {
+        "name": "Poombarai",
+        "description": "A scenic drive 18 km from Kodaikanal leads to Poombarai, a quaint village renowned for garlic cultivation and the ancient Kuzhanthai Velappar Temple. Continuing 21 km further, Berijam Lake awaits, accessible with permission from the Forest Department. This untouched paradise offers a nature walk through grasslands and Sholas, along with a museum and medicinal garden, providing a unique and enriching experience."
+      },
+       
+      {
+        "name": "Pambar Falls",
+        "description": "
+Pambar Falls, also known as the Grand Cascade, located 4 km from Kodaikanal, is a top sightseeing spot. Accessible any day, it offers a trek through a steep and challenging path behind Pambar House. The waterfall cascades down zig-zag rock formations, culminating in a natural tub for a refreshing freshwater bath amidst vibrant flora, fauna, melodious birds, and butterflies."
+      }
+    ],
+    "iframeLink": "https://www.google.com/maps/embed?pb=..."
+}
+
+// munnar 
+
+{
+    "id": "unique_package_id_12345",
+    "destination": "Munnar",
+    "name": "Journey to the Heart of the Hills",
+    "days": 2,
+    "image": "Assets/17702.jpg",
+    "places": [
+      {
+        "name": "Echo Point,munnar",
+        "description": "Trek, walk, stroll or indulge in boating because Echo point in Munnar is a place where you see the creamy clouds floating and rolling down the hilltops, the lush vegetation creates a sight which is often captured in cameras to boost the beauty of Munnar. At 600 ft. above the sea level, people scream with utter enthusiasm to hear it resound and then laugh out of pure amazement. "
+      },
+      {
+        "name": "Attukad Waterfalls,munnar",
+        "description": "It is one of the four main waterfalls of Munnar and is very popular among adventure seekers, as the dirt mountain path through the forest gives chills on every step towards Attukad Waterfalls. Take your swimwear as the pool at the bottom of the fall has enough water to dip and bath. It is highly recommended that you visit Munnar during Monsoon season if waterfalls top the list of ‘places to visit in Munnar."
+      },
+    
+    ],
+    "iframeLink": "https://www.google.com/maps/embed?pb=..."
+}
+
+// munnar -5
+
+{
+    "id": "unique_package_id_12345",
+    "destination": "Kodaikanal",
+    "name": "Journey to the Heart of the Hills",
+    "days": 5,
+    "image": "Assets/17702.jpg",
+    "places": [
+      {
+        "name": "Pothamedu View Point,munnar",
+        "description": "Drenched in the mist and greenery, Pothamedu viewpoint is a spot worth trekking to. This viewpoint enables a panoramic vista of the valley and if the day is clear, you can also see Muthirapuzha River and Idukki Arch Dam from quite a height. The view is made of a series of emerald hill slopes where tea, coffee, cardamom, and pepper make a blanket of green all over the hills."
+      },
+      {
+        "name": "Tata Tea Museum,munnar",
+        "description": "If you are lucky enough to make it during the show timings, you will learn a lot that day. From the early history of Tea Plantation to how British brought Tea culture and cultivation in the region, the toil and hard work of the people who endured during those days, the machineries and tools, the entire process of cultivating, plucking, drying and final packaging of Tea; almost everything you learn in just a half an hour documentary that is played here. "
+      },
+      {
+        "name": "Eravikulam National Park,munnar",
+        "description": "
+Eravikulam National Park, located 45 minutes from Munnar's City Centre, is a UNESCO World Heritage Site atop the Western Ghats. Spanning 97 square kilometers, it boasts diverse flora and fauna, including 132 bird species, 26 mammals, and the endangered Nilgiri Tahr. Engage in eco-tourism activities, educational camps, and don't miss the Anamudi Peak, Kerala's highest point."
+      },
+       {
+        "name": "Marayoor Dolmens",
+        "description": "Marayoor, a captivating Munnar sightseeing spot, houses 15 Neolithic and Iron Age dolmens, remnants of the Megalithic age. Located around 55 km from Munnar, the site features burial chambers with four stones and granite slabs. Trek through Muniyara to explore this archaeological gem, known for prehistoric paintings and a lush sandalwood forest, offering a fascinating glimpse into our heritage."
+      },
+      {
+        "name": "Chinnakanal Waterfalls",
+        "description": "Chinnakanal, a captivating waterfall along the NH leading to Thekkady, is located 20 km from Munnar. Fed by the River Devikulam, it offers a scenic retreat with lush green surroundings. Visitors can relax, take photos, and even bathe in the waterfall, providing an unforgettable experience amidst the tranquil beauty of Munnar."
+      },
+    ],
+    "iframeLink": "https://www.google.com/maps/embed?pb=..."
+}
+
+
+// munnar-7
+
+{
+    "id": "unique_package_id_12345",
+    "destination": "Kodaikanal",
+    "name": "Journey to the Heart of the Hills",
+    "days": 7,
+    "image": "Assets/17702.jpg",
+    "places": [
+      {
+        "name": "Chokramudi Peak,munnar",
+        "description": "Chokramudi, a captivating hill at 7,200 ft within Eravikulam National Park, offers a short and easy day trek. The trek begins at Pothamedu, an hour's drive from Munnar, covering 10 km in 4 to 5 hours through lush Shola forest. Reaching the summit provides a refreshing experience, with the option to witness a spectacular sunrise and observe herds of Nilgiri Tahr. Chokramudi stands as one of the incredible places to explore in Munnar."
+      },
+      {
+        "name": "Mattupetti Indo Swiss Farm,munnar",
+        "description": "Mattupetti Dairy Farm, or the Indo-Swiss farm, initiated under the 1963 Indo-Swiss project in Kerala, focuses on cattle development and research. Nestled in the charming village of Mattupetty, also known as the 'cattle village,' this farm is renowned for its lush green landscapes and diverse cattle breeds. With picturesque views and beautiful gardens, the farm, located just 3 km from Mattupetty Dam, offers a unique and offbeat Munnar tourist experience. "
+      },
+      {
+        "name": "Tree House Stay",
+        "description": "Munnar, the perfect getaway for people in Kerala during summers, has some of the most unparalleled experiences to offer. And one of these experiences is staying in a treehouse. This must have been everyone’s childhood dream at one point of time and now it has come true as the Seven Springs Plantation Resort. "
+      },
+       {
+        "name": "Photo Point",
+        "description": "This is a picturesque curve on the Nilgiri slopes which is located at a distance of around 3 km from Munnar on the way to Top station and Mattupetti. Photo point truly justifies its name and if you do not think the location has nothing as such to offer while driving through the undulating plains, take a pause, come out of your car and get clicked here, you would notice how photogenic the place is. "
+      },
+      {
+        "name": "Lakkom Water Falls",
+        "description": "This waterfall is part of the Eravikulam National Park and falls on the route to Udumalaipettai from Munnar. It originates from the Eravikulam stream at around 30 km off Munnar. Travel through the thick tea plantation on a narrow winding trail and witness this silky white magic of nature. In the clear water of the pool below, you can even see your toe twiddling on the rocks."
+      },
+      {
+        "name": "Anamudi",
+        "description": "The most sought-after destination in Munnar is Anamudi peak (8842 ft), the highest peak of South India. Trekking in Munnar on the misty path Rajamalai (Eravikulam) National Park and then following a view of what we know as “the Himalayas of South India” can leave you in a state of ecstasy. The place is a delight for nature lovers, wildlife enthusiasts, mountaineers, trekkers, and photographers and also one of the best places to see in Munnar."
+      },
+      {
+        "name": "Devikulam",
+        "description": "Devikulam is a quaint little hill-station tucked between lush greenery and beauty. Located very close to Munnar, this is an ideal destination to visit as a day trip. Home to make scenic attractions and sites, Devikulam, which literally translates to ‘pond or lake of the Devi’, is a great alternative to other Munnar tourist places."
+      },
+    ],
+    "iframeLink": "https://www.google.com/maps/embed?pb=..."
+}

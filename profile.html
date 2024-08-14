@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+     rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="CSS/tripnav.css"> -->
+    <link rel="stylesheet" href="CSS/profile.css">
+    <style>
+
+        .topnav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            
+            border-radius: 2px;
+            box-shadow: 0px 1px 3px #999;
+            z-index: 1000;
+          }
+          
+          .logo {
+            margin-left: 40px;
+            width: 100px; /* Adjust width as needed */
+            height: auto; /* Allows the logo div to adjust its height based on content */
+          }
+          
+          .logo img {
+            max-width: 100%;
+            height: auto;
+          }
+          
+          .menu {
+            width: 70%;
+            /* flex: 1; */
+            display: flex;
+            
+            justify-content: flex-end; /* Takes up remaining space */
+          }
+          
+          .menu ul {
+            width: 80%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 3%;
+            justify-content: flex-end; 
+          }
+          
+          .menu ul li {
+            margin-right: 10px;
+          }
+          
+          .menu ul li:last-child {
+            margin-right: 0; /* Removes margin from last menu item */
+          }
+          
+          .menu ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+          }
+          
+          .user {
+            width: 160px; /* Adjust width as needed */
+            display: flex;
+            justify-content: center; /* Aligns user links to the right */
+          }
+          h1, h2, h3, h4, h5, h6 {
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: 'Montserrat';
+          }
+          a,i{
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: 'Montserrat';
+          }
+          .user a {
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin-left: 10px;
+          }
+          .user .signin:hover {
+    transition: box-shadow 0.2s ease;
+    box-shadow: 0px 1px 4px #999;
+}
+          
+          .user .profile i {
+            font-size: 24px;
+          }
+          .signin{
+            padding: 8px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #F9896B;
+            border-radius: 50px;
+          }
+          
+            </style>
+</head>
+
+<body>
+    <header style="position: sticky; top: 0; left: 0; z-index: 1000; height: 50px;  ">
+        <div class="topnav">
+            <div class="logo">
+                <a href="index.html"><img src="Assets/dckap-trip-logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="collections.html">Critiq Collections</a></li>
+                <li><a href="admin.html">Admin Dashboard</a></li>
+              </ul>
+            </div>
+            <div class="user">
+              <a href="login.html" id="nav-btn" class="signin"   >Sign In</a>
+              <a href="profile.html" id="nav-profile"  class="profile"><i class="fa-solid fa-user" style="color: #f9896b;"></i></i></a>
+            </div>
+          </div>
+    </header>
+    <div class="mainContainer">
+        <nav class="navleft">
+            <div class="leftContainer">
+                <div class="profile-logo">
+                    <a href="index.html"><img src="Assets/dckap-trip-logo.png" alt="Logo"></a>
+                </div>
+
+                <div class="menu_list">
+                    <a href="#" class="Personal-info"><span><i class="fa-regular fa-user"></i></span> Personal Info</a>
+                    <a href="#" class="addFavorite"><span><i class="fa-solid fa-heart"></i></span>Add Favorite</a>
+                    <!-- <a href="#" class="Travel-history" > <span><i class="fa-solid fa-clock-rotate-left"></i></span>Travel History</a> -->
+                    <a href="index.html" class="backTohome"><span><i class="fa-solid fa-arrow-left"></i></span>Back To Home</a>
+                    <a href="index.html" class="Log-out"><span><i class="fa-solid fa-arrow-right-from-bracket"></i></span> Log Out</a>
+
+                </div>
+                
+            </div>
+        </nav>
+
+
+        <div class="rightContainer" style="margin-top: 40px;">
+            <div class="profile-details">
+                <div class="head">
+                    <h2 style="font-weight: bolder; font-size: 24px;">Profile Info</h2>
+                    <button class="btn"><span><i class="fa-solid fa-user-pen"></i></span> Edit</button>
+                      <div class="twoBtn">
+                        <button id="cancel" class="cancel">Cancel</button>
+                        <button id="savebtn" class="btn"><span></span>Save</button>
+                      </div> 
+
+                </div>
+
+                <div class="image">
+                    <img class="ProfileImg" src="Assets/gray-user-profile-icon-png-fP8Q1P copy.png" alt="">
+                    <label class="proImgicon" for="input-file"><i class="fa-solid fa-camera"></i></label>
+                    <input type="file" name="userProfile" accept="image/jpeg, image/png, image/JPG" id="input-file">
+                </div>
+
+                <div class="defaultShow-detials">
+                    <ul class="default-detials">
+                        <li>
+                            <label class="keyname" style="font-weight: bold;;" for="">Name :</label>
+                            <div id="defaultName" class="filed-con">default name</div>
+
+                        </li>
+                        <li>
+                            <label class="keyname" style="font-weight: bold;;" for="">Email :</label>
+                            <div id="defaultEmail" class="filed-con">+Add</div>
+                        </li>
+                        <li>
+                            <label class="keyname" style="font-weight: bold;;" for="">Mobile No:</label>
+                            <div id="defaultNo" class="filed-con">+Add</div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <form action="a" class="form" id="profileform">
+                    <div class="details">
+                        <div>
+                            <p class="keyname" style="font-size: 16px;">Name</p>
+                            <input type="text" name="name" data-set="defaultName" value="" placeholder="Enter your name"
+                                id="name">
+                            <p id="errorName" class="err"></p>
+                        </div>
+                        <div>
+                            <p class="keyname" style="font-size: 16px;">Email</p>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                            <p id="errorEmali" class="err"></p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div>
+                            <p class="keyname" style="font-size: 16px;">Phone Number</p>
+                            <input type="number" name="phone" id="phone" placeholder="Enter your phone number">
+                            <p id="errorPhonenumber" class="err"></p>
+                        </div>
+                        <div>
+                            <p class="keyname" style="font-size: 16px;">Username</p>
+                            <input type="text" name="username" id="username" placeholder="Enter your username">
+                            <p id="errorUsername" class="err"> </p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div>
+                            <p class="keyname" style="font-size: 16px;">Password</p>
+                            <input type="password" name="password" id="password" placeholder="Enter your password"
+                                onkeyup="passwordValidation()">
+                            <p id="errorPassword" class="err"></p>
+                        </div>
+                        <div>
+                            <p class="keyname" style="font-size: 16px;">Confirm Password</p>
+                            <input type="password" name="confirm-password" id="confirm-password"
+                                placeholder="Confirm your password">
+                            <p id="errorconPassword" class="err"> </p>
+                        </div>
+                    </div>
+                </form>
+
+
+                <div id="message">
+                    <h3>The minimum password lenth is 8 character & must contain at least 1 lowercase letter, 1 capital
+                        letter, 1 number & 1 special charater</h3>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="special" class="invalid">A <b>Special charater</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="add-favorite" style="margin-top: 80px;">
+            <div class="b">
+                <h3 style="font-weight: bolder; font-size: 18px;">Add Favorite</h3>
+                <button class="addFavoritebtn">+ Add Favorite</button>
+            </div>
+            <div class="addcontent">You have 0 Favorites</div>
+        </div>
+
+        <div class="travelHistory">
+            <div class="a">
+                <h3>Travel History</h3>
+                <button class="addTravelbtn">+ Add Travel</button>
+            </div>
+            <div class="addcontent">You have 0 Travels</div>
+        </div>
+    </div>
+    <script type="module" src="JS/profile.js"></script>
+    <script src="JS/navbar.js"></script>
+</body>
+
+</html>

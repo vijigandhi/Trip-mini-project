@@ -1,0 +1,715 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat'
+}
+body, html {
+    margin: 0;
+    height: 100%;
+
+}
+/* ::placeholder {
+
+  padding:10px;
+} */
+.email {
+    border: none;
+    border-bottom: 2px solid #858585;
+    outline: none;
+    width: 100%;
+    height: 19px;
+    position: relative;
+}
+
+/* .email:focus::placeholder {
+    transform: translatey(0px);
+    font-size: 12px;
+    color: #333;
+} */
+
+
+.main_container {
+     display: none;
+    width: 1007px;
+    height: 89%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    top: 40px;
+    position: absolute;
+    right: 185px;
+}
+
+.container img {
+  width: 94%;
+  height: 500px;
+  position: relative;
+  right: 20px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-radius: 12px, 0px, 0px, 12px;
+}
+
+.wrapper {
+     width: 50%;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+}
+
+.wrapper .title-text {
+  display: flex;
+  width: 100%;
+}
+
+.wrapper .title {
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .slide-controls {
+ position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 15px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    bottom: 11px;
+}
+
+.slide-controls .slide {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+
+.slide-controls label.signup {
+  color: #000;
+}
+
+.slide-controls .slider-tab {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 15px;
+  background-color: #F9896B;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#signup:checked~.slider-tab {
+  left: 50%;
+}
+
+#signup:checked~label.signup {
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+
+#signup:checked~label.login {
+  color: #000;
+}
+
+#login:checked~label.signup {
+  color: #000;
+}
+
+#login:checked~label.login {
+  cursor: default;
+  user-select: none;
+}
+
+
+.form-container .form-inner {
+  display: flex;
+  width: 200%;
+}
+
+.form-container .form-inner form {
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+     gap: 24px;
+}
+
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+
+.button {
+  width: 150px;
+  height: 40px;
+}
+
+.signup-link p {
+
+  padding-top: 12%;
+  padding-left: 5%;
+
+}
+
+.signup-btn button {
+     border-radius: 20px;
+    background-color: #F9896B;
+    font-weight: bold;
+    color: #fff;
+    width: 188px;
+    height: 47px;
+    font-size: 17px;
+    position: relative;
+    left: 25%;
+    border: 0px;
+    top: 0px;
+    cursor: pointer;
+
+}
+
+
+#signup .login_way {
+  position: relative;
+  bottom: 15px;
+}
+
+.login-btn button {
+      border-radius: 20px;
+    background-color: #F9896B;
+    color: #fff;
+    font-weight: bold;
+    width: 188px;
+    height: 47px;
+    font-size: 17px;
+    position: relative;
+    left: 27%;
+    border: 0px;
+    top: 72%;
+    cursor: pointer;
+}
+
+#login_way p {
+
+  position: relative;
+  left: 112px;
+  top: 9px;
+}
+
+.email,
+.pass,
+.username {
+  width: 96%;
+  height: 40px;
+}
+
+input {
+
+  border: none;
+  border-bottom: 2px solid #858585;
+  outline: none;
+}
+
+#login .signup-link {
+ padding-right: 6%;
+    text-align: center;
+    position: relative;
+    top: 75px;
+}
+
+#signup .signup-link {
+  text-align: center;
+  padding-right: 5%;
+}
+#signup .signup-link {
+    position: relative;
+    top: 30px;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+
+}
+
+form#signup {
+    position: relative;
+    left: 2%;
+}
+.signup-btn {
+     position: relative;
+    top: 13px;
+    left: 2%;
+
+}
+
+.pass-link {
+  line-height: 0;
+  font-size: 12px;
+  position: relative;
+  bottom: 5px;
+  right: 4%;
+  text-align: end;
+}
+
+.login_way p {
+   position: relative;
+    bottom: 0;
+    top: 10px;
+    left: 17%;
+    font-size: 24px;
+}
+
+.login_way {
+     position: relative;
+    width: 54%;
+    height: 106px;
+    left: 105px;
+    line-height: 0px;
+    top: 27px;
+}
+
+#login_way {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  right: 32%;
+}
+
+hr {
+  width: 35%;
+}
+
+.line_1 {
+  position: relative;
+  left: 32px;
+}
+
+.line {
+  position: relative;
+  left: 53%;
+  bottom: 2px;
+}
+input#login_email {
+    position: relative;
+    bottom: 13px;
+}
+svg {
+  width: 10%;
+}
+
+.google {
+  position: relative;
+  top: 8px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  display: flex;
+  width: 80%;
+  height: 32px;
+  left: 8%;
+
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup ._way {
+  padding-top: 5%;
+}
+
+
+
+.field {
+  position: relative;
+}
+
+.pass {
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.fa-eye-slash {
+  position: absolute;
+  top: 55%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.fa-regular {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+
+.otp {
+  display: none;
+}
+
+
+
+.otpdiv {
+  text-align: center;
+}
+
+.OtpContainer {
+  display: none;
+}
+
+#otp_container {
+  padding-top: 30%;
+  display: flex;
+  gap: 20px;
+}
+
+#otpbtn {
+  width: 21%;
+  height: 33px;
+  background-color: #F9896B;
+  border: 0px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.OTP_verifiction {
+  text-align: center;
+  color: #F9896B;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.OTP_para {
+  width: 76%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D3EDD9;
+  padding: 5%;
+  margin-left: 14%;
+  border: 1px solid #8da797;
+  line-height: 20px;
+}
+
+.google span {
+  color: black;
+}
+
+.OTP_para p {
+  color: #70917D;
+  text-align: center;
+}
+
+.OTP {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.otpdiv input {
+  width: 74%;
+  height: 40px;
+}
+
+#otpbtn {
+ width: 61%;
+    height: 46px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.otpdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.xmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px; 
+}
+
+span {
+font-size: 12px;
+    color: red;
+    letter-spacing: 2px;
+    font-weight: 900px;
+}
+
+.login_email_error {
+
+      text-transform: uppercase;
+    display: none;
+    position: relative;
+    bottom: 13px;
+
+}
+
+.pass-link .login_password_error {
+  display: flex;
+position: absolute;
+    left: 21px;
+     bottom: 9px;
+   text-transform: uppercase;
+}
+
+.pass-link .login_password_error {
+  display: none;
+}
+
+.signup_user_error,
+.signup_confirm_error,
+.signup_password_error,
+.signup_email_error {
+  font-size: 12px;
+    color: red;
+    letter-spacing: 2px;
+    font-weight: 900px;
+}
+
+.signup_user_error {
+  display: none;
+}
+
+.signup_confirm_error {
+  display: none;
+}
+
+.signup_password_error {
+  display: none;
+}
+
+.signup_email_error {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+
+
+.tooltip {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 41px;
+  left: 0;
+  width: 62%;
+  height: 195px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid #000000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding-left: 8%;
+}
+
+.tooltip h3 {
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  right: 5%;
+  color: #000;
+}
+
+
+.tooltip p {
+  padding-top: 5%;
+}
+
+.tooltip.active {
+  display: block;
+}
+
+.invalid {
+  color: red;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+
+  left: -25px;
+  content: "✔";
+}
+
+.invalid:before {
+  position: relative;
+  left: -25px;
+  content: "✖";
+}
+
+.otpinput {
+  width: 20%;
+  height: 50px;
+}
+
+.input {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  left: 81px;
+}
+
+.otpdiv input {
+  border-bottom: 2px solid darkgray;
+  box-shadow: 0px 0px 5px 0px darkgray;
+
+}
+.border {
+  border-bottom: 2px solid red;
+}
+
+.another_way_login {
+       text-align: center;
+    line-height: 36px;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    top: 19px;
+
+}
+
+/* .another_way_login .google_btn span {
+    width: 120px;
+     padding: 0.5rem 1.4rem;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    gap: 0.75rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .6s ease;
+} */
+
+/* .another_way_login .google_btn .button svg {
+    height: 24px;
+    width: 33px;
+        position: relative;
+    top: 7px;
+} */
+
+/* .another_way_login .google_btn span:hover {
+  transform: scale(1.02);
+}
+
+.login_way .google_btn span {
+    width: 120px;
+     padding: 0.5rem 1.4rem;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    gap: 0.75rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .6s ease;
+} */
+.text p{
+  font-size: 24px;
+}
+.login_way .google_btn .button svg {
+    height: 24px;
+    width: 33px;
+        position: relative;
+    top: 7px;
+}
+/* 
+.login_way .google_btn span:hover {
+  transform: scale(1.02);
+}
+.login_way .google_btn {
+left: 73px;
+    top: 32%;
+    position: relative;
+} */
+
+.pass {
+  padding-right: 30px; 
+  position: relative;
+}
+
+/* Style for the eye icon */
+.eye-icon {
+position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.fa-eye {
+  content: "\f06e"; 
+}
+
+
+.fa-eye-slash {
+  content: "\f070"; 
+}
+
+.pass {
+  padding-right: 30px; 
+  position: relative;
+}
+
+.fa-eye-slash, .fa-eye {
+  position: absolute;
+  top: 50%;
+  right: 30px; 
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.fa-eye {
+  content: "\f06e"; 
+  }
+.fa-eye-slash {
+  content: "\f070"; 
+}

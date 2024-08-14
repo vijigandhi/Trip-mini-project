@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@400;500&family=Pacifico&family=Poppins:wght@200&family=Raleway:wght@300&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/destiresults.css" />
+    <style>
+      .topnav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px #999;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin-left: 40px;
+    width: 100px;
+    height: auto; 
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .menu {
+    width: 70%;
+  
+    display: flex;
+    
+    justify-content: flex-end; 
+  }
+  
+  .menu ul {
+    width: 80%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3%;
+    justify-content: flex-end; 
+  }
+  
+  .menu ul li {
+    margin-right: 10px;
+  }
+  
+  .menu ul li:last-child {
+    margin-right: 0; 
+  }
+  
+  .menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .user {
+    width: 160px; 
+    display: flex;
+    justify-content: center;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  a,i{
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  .user a {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  .user .signin:hover {
+    transition: box-shadow 0.2s ease;
+    box-shadow: 0px 1px 4px #999;
+}
+  
+  .user .profile i {
+    font-size: 24px;
+  }
+  .signin{
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F9896B;
+    border-radius: 50px;
+  }
+    </style>
+   
+    <title>Document</title>
+</head>
+
+<body>
+  <header style="position: sticky; top: 0; left: 0; z-index: 1000; height: 40px; ">
+    <div class="topnav">
+      <div class="logo">
+        <a href="index.html"><img src="Assets/dckap-trip-logo.png" alt="Logo"></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="collections.html">Critiq Collections</a></li>
+          <li><a href="admin.html">Admin Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="user">
+        <a href="login.html" id="nav-btn" class="signin"   >Sign In</a>
+        <a href="profile.html" id="nav-profile"  class="profile"><i class="fa-solid fa-user" style="color: #f9896b;"></i></i></a>
+      </div>
+    </div>
+  </header>
+
+    <div class="result-top-div" style="background-image: url(Assets/17702.jpg);">
+        <div class="text">
+            <h1 class="destinationName">Kodaikanal</h1>
+            <div class="tophr">
+                <hr />
+            </div>
+            <h2 class="packagename" contenteditable="false">
+                “Journey to the Heart of the Hills" <br />
+
+
+            </h2>
+
+
+        </div>
+       
+    </div>
+    <div class="we2" style="margin-bottom: 150px;">
+        <div class="text">
+            <h1>Highlights of your trip</h1>
+            <div class="tophr">
+                
+            </div>
+           
+            <div class="trip_details" id="trip-details" style="margin-top: 30px;">
+                  <!-- <section class="container">
+                    <div class="card">
+                      <div class="content">
+                      <p class="day-count logo">Digital Way</p>
+                        <div class="place-name h6">Infrastructure Agility</div>
+                        <div class="hover_content">
+                          <p class="place-description">mParticle’s customer data platform empowers you to Integrate all of your data and orchestrate it across channels, partners, and systems.</p>
+                        </div>
+                      </div>
+                    </div>
+        
+                  </section> -->
+                   
+            </div>
+
+        </div>
+        <div class="pic" id="pic" >
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62821.0534841659!2d77.45712016665739!3d10.236090509547667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0766637f0a0387%3A0x9ffae9373758c13c!2sKodaikanal%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1708924788932!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+    </div>
+  
+<!-- -----------------------------------------------footer------------------------- -->
+<footer>
+  <div class="footer-container">
+      <div class="footer-logo">
+          <img src="Assets/logo-full-palli-tamil-color.png" alt="Logo">
+      </div>
+      <div class="footer-links">
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <a href="destinations.html">Destinations</a>
+          <a href="planner.html">Planner</a>
+          <a href="collections.html">Critiq Collections</a>
+      </div>
+      <div class="footer-section">
+          <h3>Follow Us</h3>
+          <a href="https://discord.gg/mMbcRrMz">Discord</a>
+          <a href="https://www.linkedin.com/company/dckap-palli/mycompany/">Linkedin</a>
+          <a href="https://www.instagram.com/dckappalli/">Instagram</a>
+      </div>
+          <div class="footer-section">
+              <h3>Legal</h3>
+              <a href="#">Privacy Policy</a>
+              <!-- <a href="#">Link 2</a>
+              <a href="#">Link 3</a> -->
+          </div>
+      </div>
+  </div>
+</footer>
+
+    
+
+   
+
+
+
+
+    <script type="module" src="JS/destiresults.js"></script>
+    <!-- <script  type="module" src="JS/packages.js"></script> -->
+    <script src="JS/navbar.js"></script>
+    <script async defer  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATEr-HLbx6AhxuKSEfqhODP3JqpCaS4PM&libraries=places"></script>
+</body>
+
+</html>

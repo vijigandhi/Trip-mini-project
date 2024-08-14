@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/dashboard.css" />
+  <!-- <link rel="stylesheet" href="CSS/tripnav.css"> -->
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@400;500&family=Pacifico&family=Poppins:wght@200&family=Raleway:wght@300&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+
+.topnav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px #999;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin-left: 40px;
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Allows the logo div to adjust its height based on content */
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .menu {
+    width: 70%;
+    /* flex: 1; */
+    display: flex;
+    
+    justify-content: flex-end; /* Takes up remaining space */
+  }
+  
+  .menu ul {
+    width: 80%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3%;
+    justify-content: flex-end; 
+  }
+  
+  .menu ul li {
+    margin-right: 10px;
+  }
+  
+  .menu ul li:last-child {
+    margin-right: 0; /* Removes margin from last menu item */
+  }
+  
+  .menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .user {
+    width: 160px; /* Adjust width as needed */
+    display: flex;
+    justify-content: center; /* Aligns user links to the right */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  a,i{
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  .user a {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  .user .signin:hover {
+    transition: box-shadow 0.2s ease;
+    box-shadow: 0px 1px 4px #999;
+}
+
+  
+  .user .profile i {
+    font-size: 24px;
+  }
+  .signin{
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F9896B;
+    border-radius: 50px;
+  }
+  
+</style>
+    <body>
+
+  <!-- ------------------------------ navbar ----------------------------- -->
+  <header style="position: sticky; top: 0; left: 0; z-index: 1000; height: 40px; ">
+    <div class="topnav">
+      <div class="logo">
+        <a href="index.html"><img src="Assets/dckap-trip-logo.png" alt="Logo"></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="collections.html">Critiq Collections</a></li>
+          <li><a href="admin.html">Admin Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="user">
+        <a href="login.html" id="nav-btn" class="signin"   >Sign In</a>
+        <a href="profile.html" id="nav-profile"  class="profile"><i class="fa-solid fa-user" style="color: #f9896b;"></i></i></a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ------------------------------- home body ------------------------------------ -->
+
+  <div class="main-home-container" >
+    <div class="homepage-body">
+    
+      <div class="homepage-innerbody">
+        <div class="tagline">
+          <h1>The World Awaits</h1>
+          <div class="tagline-hr">
+            <hr />
+          </div>
+          <h2 contenteditable="false">
+            “One’s destination is <br />
+            never a place but rather a new <br />
+            way of looking at things.”<br />
+
+          </h2>
+
+
+        </div>
+        <div class="homepage-body-pic">
+          <a><img src="./Assets/home.jpg" alt="sale" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="homepage-menus-descriptions">
+      <div class="homepage-menus-descriptions-innerbody">
+        <div class="home-page-menus-explain-sentence-div">
+          <h2 class="home-page-menus-explain-sentence">Easily plan your trips and embrace the adventure!</h2>
+          <div class="hr1">
+            <hr />
+          </div>
+        </div>
+
+        <!-- -------------------------- destination menu ----------------------------->
+
+        <div class="destination-description">
+          <div class="destination-description-image-div">
+            <img class="destination-description-image" src="Assets/destination.png" alt="" />
+          </div>
+          <div class="destination-menu-content">
+            <div class="destination-menu-content-text">
+              <h3>Destinations</h3>
+              <p style="line-height: 20px;">
+                Exploring destinations is akin to embarking on a journey 
+                of self-discovery, where every path ventured and every sight 
+                beheld unveils a piece of the intricate puzzle that is life. 
+                With each new destination, we immerse ourselves in the vibrant tapestry of 
+                cultures, traditions, and landscapes, enriching our understanding of the world 
+                and our place within it. 
+              </p>
+              <a href="destinations.html" id="destination-explore" class="explore-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+
+         <!-- -------------------------- planner menu ----------------------------->
+
+        <div class="planner-description">
+          <div class="planner-menu-content">
+            <div class="planner-menu-content-text">
+              <h3>Planner</h3>
+              <p style="line-height: 20px;">
+                Planning your trip yourself is an empowering experience, <br>
+                where you become the architect of your own adventure. <br>From researching 
+                destinations to crafting itineraries, <br> every decision is a step towards 
+                personalizing your journey.
+              </p>
+              <a href="" id="planner-explore" class="explore-btn">Explore</a>
+            </div>
+          </div>
+          <div class="planner-description-image-div">
+            <img class="planner-description-image" src="./Assets/planner.png" alt="" />
+          </div>
+        </div>
+
+         <!-- -------------------------- collection menu ----------------------------->
+
+        <div class="collection-description">
+          <div class="collection-description-image-div">
+            <img class="collection-description-image" src="./Assets/collections.png" alt="" />
+          </div>
+          <div class="collection-menu-content">
+            <div class="collection-menu-content-text">
+              <h3>Collections</h3>
+              <p style="line-height: 20px;">
+                Collecting your plans and showcasing them is like curating <br>
+                 a gallery of your adventures, where each detail becomes <br> a cherished exhibit in 
+                 the museum of your memories. Organizing them into a digital or physical travel journal, you create a tangible reminder of the journey ahead, a roadmap of dreams waiting to be realized.
+              </p>
+              <a href="" id="collections-explore" class="explore-btn">Explore</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ------------------------ customer testimonial ---------------------------- -->
+
+    <div class="homepage-testimonial">
+      <div class="testimonial-head">
+        <h2 style="font-family: 'Montserrat'; font-weight: bolder; font-size: 28px;">Customer Testimonials</h2>
+        <div class="testimonial-head-content">
+          <hr />
+        </div>
+        <p>
+          Customer testimonials are the heart of our success story. Hear firsthand from 
+          our satisfied clients about their exceptional experiences. Discover why they trust 
+          us to deliver top-notch service and quality, every time. Join our community of happy 
+          customers and experience excellence for yourself.
+        </p>
+      </div>
+
+      <div class="testimonial-block">
+        <div class="testimonial-block-1">
+                <img src="./Assets/img_avatar.png" alt="" class="user-profile">
+          <h3>Joel</h3>
+          <p>
+            Optimize sales channels, create workflow automation, improved
+            productivity, and better employee & customer experience – all by
+            integrating your ERP.
+          </p>
+        </div>
+
+        <div class="testimonial-block-2">
+            <img src="./Assets/img_avatar2.png" alt="" class="user-profile">
+          <h3>Smitha</h3>
+          <p>
+            Access your products, orders, shipping, invoices, and customers in
+            one place and create a better online experience through eCommerce
+            integration.
+          </p>
+        </div>
+
+        <div class="testimonial-block-3">
+            <img src="./Assets/img_avatar.png" alt="" class="user-profile">
+          <h3>Kavin</h3>
+          <p>
+            Gain customer insights, increase your team’s productivity, and
+            boost customer engagement by connecting your CRM with other
+            applications.
+          </p>
+        </div>
+
+        <div class="testimonial-block-4">
+            <img src="./Assets/img_avatar2.png" alt="" class="user-profile">
+          <h3>Thara</h3>
+          <p>
+            Make smarter business decisions through increased accuracy, and
+            centralized access to real-time data – by connecting your data
+            across business systems.
+          </p>
+    
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- -------------------------------- footer ------------------------------- -->
+  <footer>
+    <!-- <hr style="width:100%;text-align:left;margin-left:0"> -->
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="Assets/logo-full-palli-tamil-color.png" alt="Logo">
+        </div>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="destinations.html">Destinations</a>
+                <a href="planner.html">Planner</a>
+                <a href="collections.html">Critiq Collections</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="https://discord.gg/mMbcRrMz">Discord</a>
+                <a href="https://www.linkedin.com/company/dckap-palli/mycompany/">Linkedin</a>
+                <a href="https://www.instagram.com/dckappalli/">Instagram</a>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <a href="#">Privacy Policy</a>
+                <!-- <a href="#">Link 2</a>
+                <a href="#">Link 3</a> -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./JS/navbar.js"></script>
+<!-- <script type="module" src="./JS/signup.js"></script> -->
+  <script src="./JS/dashboard.js"></script>
+
+</body>
+
+</html>
+

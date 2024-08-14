@@ -1,0 +1,331 @@
+html{
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  user-select: none;
+  font-family: "Montserrat",sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  max-width:100%;
+ 
+}
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #F9896B;
+  border-radius: 2.5px;
+}
+
+/* --------------- */
+.mainContainer {
+  display: flex;
+  
+}
+
+.navleft{
+  width: 90px;
+  transition:0.2s linear ;
+  position: fixed;
+  
+  border: 2px solid rgb(240, 240, 240);
+}
+.navleft:hover{
+  width: 20%;
+}
+.leftContainer{
+  padding: 1rem;
+  position: relative;
+  height: 94vh;
+}
+.profile-logo{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+  
+}
+.profile-logo img{
+  width: 45px;
+  height: 45px;
+  border: 0.5px solid rgb(240, 240, 240);
+  border-radius: 100px;
+}
+.profile-logo span{
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.menu_list{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: auto; 
+}
+.menu_list a{
+  display: flex;
+  height: 25px;
+  align-items: center;
+  white-space: nowrap;
+  padding: 10px;
+  margin: 5px;
+  color: rgb(39, 39, 39);
+  font-weight: 500;
+  overflow: hidden;
+  text-decoration: none;
+}
+.menu_list i{
+  font-size: 1.2rem;
+  margin: 0 1.8rem 0 0.3rem;
+}
+.menu_list a:hover{
+  background-color: #F9896B;
+  color: #FFF;
+  border-radius: 100px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1); 
+  font-weight: bold;
+}
+.color {
+  background-color: rgb(240, 240, 240);
+  border-radius: 100px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.rightContainer {
+  width: 60%;
+  height: fit-content;
+  position: relative;
+  margin: 10px;
+  left: 22%;
+  /* margin-left: 40px; */
+  border: 2px solid rgb(240, 240, 240);
+  border-radius: 10px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.btn {
+  background-color: #F9896B;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  width: 80px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+
+}
+.btn:hover {
+  background-color: #DB765B;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.profile-details {
+  margin: 10px;
+  
+}
+.twoBtn{
+  display: flex;
+  justify-content: space-between;
+}
+.cancel{
+  width: 80px;
+  padding: 10px;
+  border: 1px solid #F9896B;
+  border-radius: 100px;
+  background-color: #fff;
+  font-size: 14px;
+}
+/* ----------------------------------default-detials--------------------------------- */
+
+.default-detials li {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom:30px;
+  gap: 10px;
+  position: relative;
+  left: 60px;
+  padding: 5px;
+  border-bottom: 0.5px solid #b6b6b6;
+}
+
+/* -----------------------------edit page---------------------------------------- */
+.details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 10px; */
+  display: none;
+}
+.filed-con{
+  font-size: 14px;
+  color: rgb(10, 100, 185);
+}
+
+.err{
+  width: 100%;
+  /* height: 2px; */
+  font-size: 12px;
+  color: red;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  border: 2px solid #EAEAEA;
+}
+
+
+/* --------------travelHistory & add-favorite------------------------------------- */
+
+.travelHistory,
+.add-favorite {
+  width: 60%;
+  position: absolute;
+  left: 19.7%;
+  top: 10px;
+  margin-left: 40px;
+  border-radius: 10px;
+  border: 2px solid rgb(240, 240, 240);
+  display: none;
+}
+.a,
+.b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.addcontent{
+  margin: 10px;
+}
+
+.addTravelbtn,
+.addFavoritebtn {
+  width: 110px;
+  height: 30px; 
+  background-color: #F9896B; 
+  border: none;
+  color: #fff; 
+  border-radius: 100px;
+}
+.addFavoritebtn:hover {
+  background-color: #DB765B;
+  cursor: pointer;
+  font-weight: bold;
+} 
+.addTravelbtn:hover {
+  background-color: #DB765B;
+  cursor: pointer;
+  font-weight: bold;
+} 
+
+/* -----------------------profile image----------------------------------------------------- */
+
+.image {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color: #dbdbdb;
+  position: relative;
+  left: 100px;
+  text-align: center;
+  margin: 10px;
+}
+.ProfileImg{
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+#input-file{
+  display: none;
+}
+.proImgicon{
+  display: block;
+  width: 20%;
+  height: 20%;
+  border-radius: 100px;
+  background-color: #949494;
+  color: #fff;
+  position: relative;
+  top: -30px;
+  left: 100px;
+  cursor: pointer;
+}
+.proImgicon i {
+  margin: 6px;
+}
+
+/* --------------------------password tooltip--------------------------------------------------------- */
+
+#message {
+  display:none;
+  width: 35%;
+  height: auto;
+  background: #fafafa;
+  color: #000;
+  border-radius: 10px;
+  position: absolute;
+  padding: 20px;
+  margin-left: 5%;
+  margin-top: -60%;
+  box-shadow: 2px 2px 5px #535353;
+  font-size: 12px;
+}
+
+#message p {
+  padding: 10px 35px;
+  
+}
+#message h3{
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
+  border: 1px solid #DB765B;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}

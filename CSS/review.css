@@ -1,0 +1,395 @@
+*{
+  font-family: "Montserrat";
+}
+
+
+
+.container {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 60em;
+  max-width: 80%;
+  padding: 2em 0;
+  background: #FFF;
+  box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
+  transition: all 0.35s ease;
+  z-index: -1
+}
+
+.card::before, .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: orange;
+  height: 4px;
+}
+
+.card::before {
+  width: 0;
+  opacity: 0;
+  transition: opacity 0 ease, width 0 ease;
+  transition-delay: 0.5s;
+}
+
+.card::after {
+  width: 100%;
+  background: white;
+  transition: width 0.5s ease;
+}
+
+.card .content {
+  width: 60em;
+  max-width: 80%;
+  /* overflow-x: hidden; */
+}
+
+.card .logo {
+  margin: 0 0 1em;
+  width: 10.625em;
+  transition: all 0.35s ease;
+}
+
+.card .h6 {
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 8px;
+  letter-spacing: 2px;
+}
+
+/* .card .hover_content {
+  overflow: hidden;
+  max-height: 0;
+  transform: translateY(1em);
+  transition: all 0.55s ease;
+} */
+
+.card .hover_content p {
+  margin: 1.5em 0 0;
+  color: #6E6E70;
+  line-height: 1.4em;
+}
+/* ------------------------------------hover shadow--------------------- */
+.card:hover {
+  width: 60em;
+  cursor: pointer;
+  box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+} 
+
+/* .card:hover::before {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease, width 0.5s ease;
+  transition-delay: 0;
+}
+ */
+.card:hover::after {
+  width: 0;
+  opacity: 0;
+  transition: width 0 ease;
+}
+
+.card:hover .logo {
+  margin-bottom: 0.5em;
+}
+
+.card:hover .hover_content {
+  max-height: 10em;
+  transform: none;
+}
+.card .h6 {
+  color: #999;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 4px;
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+.testimonial-avatar{
+  display: flex;
+}
+.review_main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+  height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+.testimonial-rating {
+  color: #ffd700; 
+  position: relative;
+  top: 10px;
+  left: 17px;
+}
+
+
+/* ----------------------------------------------review star------------------ */
+
+
+
+button.review_share_btn {
+position: relative;
+top: 90px;
+background-color:#F9896B;
+color: #fff;
+border:none; 
+border-radius:10px; 
+padding:15px;  
+font-size: 15px;
+cursor: pointer;
+display: none;
+margin-top: 10px;
+}
+
+.review_maincontainer2 {
+
+top: 0px;
+width: 100%;
+display: none;
+
+}
+.review_container2{
+background-color: #ffffff;
+width: 60%;
+height: 450px;
+border-radius: 10px;
+box-shadow:  1px 4px 8px rgba(0, 0, 0, 0.5);
+margin: 0 auto;
+margin-top: -46%;
+
+z-index: 1;
+display: none;
+}
+
+button#review_cancel_btn {
+border: none;
+color: white;
+font-size: 30px;
+border-radius: 10px;
+background-color:  #F9896B;
+position: relative;
+width: 6%;
+left: 94%;
+cursor: pointer;
+}
+button#review_cancel_btn :hover{
+zoom: 1.1;
+}
+h2.review_container2_heading1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 25px;
+}
+h3.review_container2_heading2 {
+padding: 23px;
+margin: 0px;
+font-weight: 250;
+font-size: 20px;
+}
+h3.review_container2_heading3 {
+padding: 20px;
+margin: 0px;
+font-weight: 250;
+font-size: 20px;
+top: 20px;
+position: relative;
+}
+
+#review_textarea {
+  resize: none;
+  margin: 10px;
+  padding: 10px;
+  margin-left: 4%;
+  margin-top: -2%;
+  font-size: 15px;
+  border: 2px solid #ccc; /* Add default border */
+}
+
+
+*:focus{
+  outline-color: #F9896B;
+}
+.review_share {
+display: flex;
+justify-content: center;
+}
+button.review_submit_btn {
+  background-color: #F9896B;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  /* padding: 15px; */
+  height: 45px;
+  width: 20%;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-left: 25px;
+  margin-top: 2%;
+}
+button.review_share_btn2 :hover{
+transform: scale(1.1,1.1);
+}
+button{
+transition: 0.3s;
+}
+button:hover {.img{
+width: 100%;
+height: 100%;
+}
+
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  margin-left: 23px;
+  gap: 8px;
+}
+
+.stars i {
+font-size: 28px;
+margin-top: -18px;
+color: #e6e6e6;
+cursor: pointer;
+transition: color 0.2s ease;
+}
+
+.stars i.active {
+color: #fde848;
+}
+
+/* .review_share_btn2{
+  display: none;
+} */
+
+
+.re-heading {
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 10%;
+  display: none;
+  margin-bottom: 50px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #F9896B;
+  border-radius: 2.5px;
+}
+
+.review_container2_parent{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.error_star{
+  color: #ff0808;
+  height: 0px;
+  font-size: 12px;
+  font-weight: 200;
+  margin-left: 30px;
+  margin-top: 4px;
+}
+
+.textarea_error_msg{
+  margin-top: -2%;
+  height: 0px;
+  font-size: 12px;
+  font-weight: 200;
+  margin-left: 30px;
+}
+
+#star_rating_value{
+  margin-top: -2%;
+}
+
+/* --------img--------- */
+
+
+img.img1 {
+  width: 54px;
+  height: 54px;
+  border-radius: 50px;
+
+}
+
+/* --------------popup------------------------ */
+
+
+
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: relative;
+  top: 56px;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: rgb(251, 7, 7);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+#popupbtn:hover  {
+  opacity: 0.8;
+}
+.popup-text{
+  color: red;
+  font-weight: 200px;
+}

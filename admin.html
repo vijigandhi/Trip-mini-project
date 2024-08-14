@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@400;500&family=Pacifico&family=Poppins:wght@200&family=Raleway:wght@300&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="CSS/packages.css">
+  <!-- <link rel="stylesheet" href="CSS/tripnav.css"> -->
+  <style>
+
+.topnav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px #999;
+    z-index: 1000;
+  }
+  
+  .logo {
+    margin-left: 40px;
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Allows the logo div to adjust its height based on content */
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .menu {
+    width: 70%;
+    /* flex: 1; */
+    display: flex;
+    
+    justify-content: flex-end; /* Takes up remaining space */
+  }
+  
+  .menu ul {
+    width: 80%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3%;
+    justify-content: flex-end; 
+  }
+  
+  .menu ul li {
+    margin-right: 10px;
+  }
+  
+  .menu ul li:last-child {
+    margin-right: 0; /* Removes margin from last menu item */
+  }
+  
+  .menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .user {
+    width: 160px; /* Adjust width as needed */
+    display: flex;
+    justify-content: center; /* Aligns user links to the right */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  a,i{
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: 'Montserrat';
+  }
+  .user a {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  .user .signin:hover {
+    transition: box-shadow 0.2s ease;
+    box-shadow: 0px 1px 4px #999;
+}
+  
+  .user .profile i {
+    font-size: 24px;
+  }
+  .signin{
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F9896B;
+    border-radius: 50px;
+  }
+  
+  </style>
+  <script>
+    // Function to check admin status and redirect if not admin
+    function checkAdminStatus() {
+        const sessionObj = JSON.parse(sessionStorage.getItem('login_details')); // Make sure to replace 'yourSessionKeyName' with the actual key
+        if (!sessionObj || sessionObj.is_admin !== 1) {
+            window.location.href = '/auth.html';
+        }
+    }
+    checkAdminStatus();
+</script>
+  <title>Add Package</title>
+</head>
+<body>
+  <!-- ------------------------------ navbar ----------------------------- -->
+
+  <header style="position: sticky; top: 0; left: 0; z-index: 1000; height: 40px;">
+    <div class="topnav">
+      <div class="logo">
+        <a href="index.html"><img src="Assets/dckap-trip-logo.png" alt="Logo"></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="collections.html">Critiq Collections</a></li>
+          <li><a href="admin.html">Admin Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="user">
+        <a href="login.html" id="nav-btn" class="signin"   >Sign In</a>
+        <a href="profile.html" id="nav-profile"  class="profile"><i class="fa-solid fa-user" style="color: #f9896b;"></i></i></a>
+      </div>
+    </div>
+  </header>
+<div class="package-dest">
+  <h1>Add Package</h1>
+  <form id="packageForm">
+    <label for="destination">Destination:</label><br>
+    <input type="text" id="destination" name="destination"><br>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="days">Days:</label><br>
+    <input type="number" id="days" name="days"><br>
+    <label for="image">Image URL:</label><br>
+    <input type="text" id="image" name="image"><br>
+    
+    <!-- Dynamic fields for places -->
+    <div id="placesContainer">
+      <label>Places:</label><br>
+      <div class="place">
+        <input type="text" class="placeName" placeholder="Place name" name="placeName[]">
+        <textarea class="placeDescription" placeholder="Place description" name="placeDescription[]"></textarea>
+      </div>
+    </div>
+    
+    <button type="button" onclick="addPlace()">Add Another Place</button><br><br>
+    <button type="submit">Add Package</button>
+  </form>
+</div>
+
+  
+
+ 
+  <script>
+    function addPlace() {
+      var container = document.getElementById('placesContainer');
+      var daysInput = document.getElementById('days');
+      var numOfDays = parseInt(daysInput.value);
+      var numOfPlaces = container.getElementsByClassName('place').length;
+  
+      // Check if the number of places exceeds the number of days
+      if (!daysInput.value.trim()){
+        alert("First enter number of days");
+        return;
+      }
+      if (numOfPlaces >= numOfDays) {
+        alert("You cannot add more places than the number of days.");
+        return;
+      }
+  
+      var placeDiv = document.createElement('div');
+      placeDiv.classList.add('place');
+      placeDiv.innerHTML = `
+        <input type="text" class="placeName" placeholder="Place name" name="placeName[]">
+        <textarea class="placeDescription" placeholder="Place description" name="placeDescription[]"></textarea>
+      `;
+      container.appendChild(placeDiv);
+    }
+  </script>
+  
+  
+
+<script  type="module" src="JS/packages.js"></script>
+<script src="JS/navbar.js"></script>
+
+
+</body>
+</html>
